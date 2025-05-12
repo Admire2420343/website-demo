@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Webpage</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header>
+        <h1>Admire Chikukwa</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Welcome to My Portfolio</h2>
+            <p>My name is Admire Chikukwa.I'm a passionate web developer creating amazing digital experiences.</p>
+
+            <div class="video-container">
+                <video controls width="400" height="300" autoplay muted loop>
+                    <source src="./dimoe.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <img src="./image.jpg" alt="My Profile Picture" class="profile-img">
+            <div class="about-text">
+                <!-- Audio Player -->
+        <div class="audio-player">
+            <h3>My Favorite Song</h3>
+            <audio controls>
+                <source src="./dimoe.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+                <h3>My Skills & Background</h3>
+                <p>I'm a web developer with expertise in HTML, CSS, JavaScript, and various frameworks. I am very much eager to explore responsive and user-friendly websites.</p>
+                <ul class="skills-list">
+                    <li>HTML5 & CSS3</li>
+                    <li>JavaScript (ES6+)</li>
+                    <li>React.js</li>
+                    <li>Node.js</li>
+                    <li>UI/UX Design</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2>My Future Projects</h2>
+        <div class="projects-container" id="projects-container">
+            <!-- Projects will be added here dynamically or statically -->
+        </div>
+        <button id="add-project-btn" class="btn">Add Project</button>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form id="contact-form">
+                <div class="form-group">
+                    <input type="text" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="subject" placeholder="Subject">
+                </div>
+                <div class="form-group">
+                    <textarea id="message" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+            <div id="form-message"></div>
+        </div>
+    </section>
+        
+              
+    <!-- Footer -->
+    <footer>
+        <p>&copy; <span id="year"></span> My Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
